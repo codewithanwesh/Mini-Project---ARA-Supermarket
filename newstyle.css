@@ -1,0 +1,594 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+  .image-div{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4px black;
+    height: 5rem;
+}
+ 
+  
+  .header .logo {
+    font-size: 25px;
+    font-family: 'sans-serif', cursive;
+    color: #000;
+    text-decoration: none;
+    margin-left: 30px;
+    background-image: url("https://www.logolynx.com/images/logolynx/2a/2ab10d027894105c14127ea0737686ef.jpeg");
+  }
+  
+  .nav-items {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+  }
+  
+  .nav-items a {
+    text-decoration: none;
+    color: #000;
+    padding: 35px 20px;
+    font-weight: bold;
+    font-family: 'sans-serif', cursive;
+  }
+  
+  .login {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+  }
+  
+  .btn-1{
+   height: 50px;
+   width: 100px;
+   background-color:white;
+   border-top: none;
+   border-left: none;
+   border-bottom: none;
+   border: right 1px;;
+   font-family: 'sans-serif', bold;
+   font-size: 15px;
+   font-weight: bold;
+   text-align: center;
+   
+  
+  }
+  
+  .btn-2{
+    height: 50px;
+    width: 80px;
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border:right 1px;
+    font-family: 'sans-serif', bold;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .btn-3{
+    background: transparent;
+    border: none;
+  
+  }
+  
+  .cart{
+    position: relative;
+    margin-right: 50px;
+  }
+  body {
+    margin: 0;
+    background-color: aquamarine !important;
+    font-family: 'Roboto', sans-serif;
+     
+  }
+  .shopping-cart {
+    width: 760px;
+    height: 1170px;
+    margin: 80px auto;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+  }
+   
+  .item {
+    padding: 7px 7px;
+    height: 140px;
+    display: flex;
+    padding-bottom: 40px;
+    /* border-top:  1px solid #E1E8EE; */
+    border-bottom:  1px solid #E1E8EE;
+  }
+     .buttons {
+    position: relative;
+    padding-top: 30px;
+    margin-right: 60px;
+  }
+
+  .like-btn {
+    display: inline-block;
+    Cursor: pointer;
+  }
+  .delete-btn {
+    width: 18px;
+    height: 17px;;
+  }
+   
+  .like-btn {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    
+    width: 60px;
+    height: 60px;
+    background-size: 2900%;
+    background-repeat: no-repeat;
+  }
+  .image {
+    margin-right: 50px;
+  }
+  
+   
+  .description {
+    padding-top: 10px;
+    margin-right: 60px;
+    width: 115px;
+  }
+   
+  .description span {
+    display: block;
+    font-size: 14px;
+    color: #2c1224;
+    font-weight: 400;
+    
+  }
+   
+  .description span:first-child {
+    margin-bottom: 5px;
+    margin-bottom: 50px;
+  }
+  .description span:last-child {
+    font-weight: 300;
+    margin-top: 8px;
+    color: #43484D ;
+  }                                                            
+  
+  .quantity {
+    margin-right: 70px;
+    padding-left: 60PX;
+    }
+    
+
+
+ 
+  .quantity input {
+    
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+   
+  .plus-btn, .minus-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #E1E8EE;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  .minus-btn img {
+    margin-bottom: 3px;
+  }
+  .plus-btn img {
+    margin-top: 2px;
+  }
+   
+  button:focus,
+  input:focus {
+    outline:0;
+  }
+  .total-price {
+    width: 83px;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: #43484D;
+  }
+
+  .quantity{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position:relative;
+    right:90px;
+  }
+  .total-price{
+    margin-top: auto;
+    position: relative;
+    right:90px;
+  }
+
+
+  @media (max-width: 800px) {
+    .shopping-cart {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+    .item {
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+    }
+    .image img {
+      width: 50%;
+    }
+    .image,
+    .quantity,
+    .description {
+      width: 100%;
+      text-align: center;
+      margin: 6px 0;
+    }
+    .buttons {
+      margin-right: 20px;
+    }
+  }
+
+  .product__qty{
+    padding-bottom: 15px;
+  }
+
+
+  .navbar-expand-lg .navbar-nav .nav-link .nav-item{
+    padding-left: 20px !important;
+    font-size: medium;
+  }
+
+  .my-2 {
+    margin-top: 0.5rem!important;
+    margin-bottom: 0.5rem!important;
+    margin-left: 800px;
+}
+
+
+.btn-success {
+  background: transparent;
+}
+
+.container{
+  display: inline;
+  
+  position:relative;
+  left: 670px;
+  bottom:75px;
+  
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+  .image-div{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4px black;
+    height: 5rem;
+}
+ 
+  
+  .header .logo {
+    font-size: 25px;
+    font-family: 'sans-serif', cursive;
+    color: #000;
+    text-decoration: none;
+    margin-left: 30px;
+    background-image: url("https://www.logolynx.com/images/logolynx/2a/2ab10d027894105c14127ea0737686ef.jpeg");
+  }
+  
+  .nav-items {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+  }
+  
+  .nav-items a {
+    text-decoration: none;
+    color: #000;
+    padding: 35px 20px;
+    font-weight: bold;
+    font-family: 'sans-serif', cursive;
+  }
+  
+  .login {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+  }
+  
+  .btn-1{
+   height: 50px;
+   width: 80px;
+   background-color:white;
+   border-top: none;
+   border-left: none;
+   border-bottom: none;
+   border: right 1px;;
+   font-family: 'sans-serif', bold;
+   font-size: 15px;
+   font-weight: bold;
+   text-align: center;
+   
+  
+  }
+  
+  .btn-2{
+    height: 50px;
+    width: 80px;
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border:right 1px;
+    font-family: 'sans-serif', bold;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .btn-3{
+    background: transparent;
+    border: none;
+  
+  }
+  
+  .cart{
+    position: relative;
+    margin-right: 50px;
+  }
+  body {
+    margin: 0;
+    background-color: #adadad
+    !important;
+    font-family: 'Roboto', sans-serif;
+     
+  }
+  .shopping-cart {
+    width: 800px;
+    height: 1180px;
+    margin: 80px auto;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+  }
+   
+  .item {
+    padding: 7px 7px;
+    height: 130px;
+    display: flex;
+    padding-bottom: 40px;
+    /* border-top:  1px solid #E1E8EE; */
+    border-bottom:  1px solid #E1E8EE;
+  }
+     .buttons {
+    position: relative;
+    padding-top: 30px;
+    margin-right: 60px;
+  }
+   .btnbtn-primary{
+    background-color: white;
+
+   }
+  .like-btn {
+    display: inline-block;
+    Cursor: pointer;
+  }
+  .delete-btn {
+    width: 18px;
+    height: 17px;;
+  }
+   
+  .like-btn {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    
+    width: 60px;
+    height: 60px;
+    background-size: 2900%;
+    background-repeat: no-repeat;
+  }
+  .image {
+    margin-right: 50px;
+  }
+  
+   
+  .description {
+    padding-top: 10px;
+    margin-right: 60px;
+    width: 115px;
+  }
+   
+  .description span {
+    display: block;
+    font-size: 14px;
+    color: #2c1224;
+    font-weight: 400;
+    
+  }
+   
+  .description span:first-child {
+    margin-bottom: 5px;
+    margin-bottom: 50px;
+  }
+  .description span:last-child {
+    font-weight: 300;
+    margin-top: 8px;
+    color: #43484D ;
+  }                                                            
+  
+  .quantity {
+    margin-right: 70px;
+    padding-left: 60PX;
+    }
+    
+
+
+ 
+  .quantity input {
+    
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+   
+  .plus-btn, .minus-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #E1E8EE;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  .minus-btn img {
+    margin-bottom: 3px;
+  }
+  .plus-btn img {
+    margin-top: 2px;
+  }
+   
+  button:focus,
+  input:focus {
+    outline:0;
+  }
+  .total-price {
+    width: 83px;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: #43484D;
+  }
+
+  .quantity{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position:relative;
+    right:90px;
+  }
+  .total-price{
+    margin-top: auto;
+    position: relative;
+    right:90px;
+  }
+
+
+  @media (max-width: 800px) {
+    .shopping-cart {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+    .item {
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+    }
+    .image img {
+      width: 50%;
+    }
+    .image,
+    .quantity,
+    .description {
+      width: 100%;
+      text-align: center;
+      margin: 6px 0;
+    }
+    .buttons {
+      margin-right: 20px;
+    }
+  }
+
+  .product__qty{
+    padding-bottom: 15px;
+  }
+
+
+  .navbar-expand-lg .navbar-nav .nav-link .nav-item{
+    padding-left: 20px !important;
+    font-size: medium;
+  }
+
+  .my-2 {
+    margin-top: 0.5rem!important;
+    margin-bottom: 0.5rem!important;
+    margin-left: 800px;
+}
+
+
+.btn-success {
+  background: transparent;
+}
+
+.container{
+  display: inline;
+  
+  position:relative;
+  left: 670px;
+  bottom:75px;
+  
+}

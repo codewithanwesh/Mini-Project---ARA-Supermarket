@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="newstyle.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+    
+      
+  </head>
+  
+
+    <body>
+      <header class="header">
+          <!-- <a href="#" class="logo"></a> -->
+          <div class="image-div">
+          <img src ="https://media.creativemornings.com/uploads/sponsor/logo/24561/square_ARA_logo-whitebackground.png" alt="" width="120" height="80">
+        </div>
+          <nav class="nav-items">
+            <a href="homepagefinal.html">HOME</a>
+            <a href="#about">ABOUT</a> 
+            <a href="finalchoice.html">CATEGORY</a>  
+            <a href="#contact">CONTACT US</a>
+          </nav>
+          <nav class="login">
+            <button class="btn-1">LOGOUT</button>
+           
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart" style="background-color: white; border-color: white;">
+              <img src="https://icons.veryicon.com/png/o/miscellaneous/small-icons-1/ic-add-to-cart.png" alt="" width="40" height="40"><span class="total-count" style="color: black;"></span>)
+              <button class="clear-cart btn btn-danger">Clear Cart</button>
+          </button>
+             </button>
+      
+        </header>
+
+
+<div class="shopping-cart">
+    <!-- Title -->
+    <div class="title">
+      Shopping Bag
+    </div>
+   
+    <!-- Product #1 -->
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+   
+      <div class="image">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxESEBUSEBASERUWGBcYFhgXFhUSFxcVFxMWFhgXFxUYHCkgGBonGxUXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0mICYtLS0tLS0vLS0tLS0tLS0tNS0tLS0tLS0tLS0tLy0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAM8A8wMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAQIDBAUGBwj/xAA+EAABAwIDBQUGBAQFBQAAAAABAAIRAyEEEjEFQVFhcQYigZGhE7HB0eHwBzJC8RRSYnIVI4KishYzU9Li/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAEDBAIFBv/EACwRAQACAgIBAgQFBQEAAAAAAAABAgMRBBIhMUEFEyJRMmGBoeEVkbHR8BT/2gAMAwEAAhEDEQA/APcUREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAVp9AHXN4OcPcVdRBDWwIHvJ9SilEBERAREQEREBERAREQEREBERAREQERY20cdToU3VazwxjdSfQAbyeCiZ15kZKxcbtGjR/71anS/ve1vlJXm3aDtxiak/wAODRp3iINQj+o/p6DzXCbQqlxzuLi46lxJJPEk3P0WLLzOvisbHuVXtfgG3OLpHoS//iCsU9vdnbsQT0pVv/ReDmvaPvotjs5syTpw6qqOZlmfSP8Av1J8PcML2x2fUMNxVMH+vNS9XgLcYfEsqCab2vHFrg4eYXz3WomYE/RUYZz2OzMeWnix2U+YNlH9QtWdWgfRiLn+xH8ScI12KeXl12ZruyECMx3zrddAvRx371i2tbBERdgiIgIiICIiAiIgIiICIiAiIgIiICIuM/EnH7RoU2VMDOQB/tS1jajwe7kMO0Z+aSBwUWnUbTWNzp2aLlewnaoYyllqWrN/NaA4cQNx4j5rqlzS9b17VTas1nUi8m7c7ZOJxOQH/JpEho3OfoXHxsOXVegdrdqfw+Fe8GHO7jP7nTfwAJ8F4tWrncFg5vIisxj/AF/0hm4imZaGGfu61G1D+nh6jUEfe9ZNGu8X0I0lYOIEukiTzsOiyTliY8I0xaGGlvqsgOLI1PTRXmUpF5EbrEIxhiJt6etlV28+UyrbVDhvB3BdF2M7OnFYkZ2/5TO9U3T/ACs5kx5SnZbsvVxTgWtLKQPeqEW6M/mPovXdmbOp4emKdJuVo8yd5cd5WvBxvmzFp9P8oZQHBSiheuJRQgQSiIgIiICIiAiIgIiICKJUSgqRUyhdxQVKFpsbt9jbU++eOjfqtFjtukyX1THBvdHpqqL56VX0497eztSUleWVNrNeYbTcebiAOsao14MEENPIkeYJgqiedEesfu0xwLa8zP8Ab+WR25wP+H1qeNwvca6pD2D8oqQTIG4OaHAjTzXomExjKlNlRrhle0OFxo4Aj3rx3tNVNRhbYNsSb2IMyBG+FawW1qdEZQ2SyBNt4kEmIWanK6WtNK+J9ttU/DMt6R+Tve1mDqY2qylRLclOS5xPdzndO+APUrSj8OsTECrQb4vcf+K0eH21nBhp6zOsRutqPNZdPa5bEVS2TFnlpBtqPFVeL3m2SnmfzVz8JzQ2I/DOsfzYmkOYY4n3hXaf4W/z4wnpSj1L1NLaNdpj+IcDbV7jrprZbGh2irMMPc145j4iFppTje8fvKi3Ayx6KMP+GmHH58RXd0yN97StvgexWBpEH2PtCN9Qmp/tPd9FlbP2/SqWcch5mR4O+a2wK2Uw4vWIhjvS1J1aNJaABAEAKVAUq9wKFKhAUooCCUREBERAREQEREBERBBVKqKpKCHOAEkwBquG7QdpPaOLKZhg/wB3M8uSze3O2MjPYsNzdx5bh8fJea1sRNyT81k5GXX0w3cXBv6rNvjtstA3n4rnRtp5Jzb7AToOZ+9ywsRVcdSefTgsOq+d1yfILB0mfMvdwRWsadFTx0tLd93HlCe37u8yeJFuS19F1twtPyHNWXYq41ABAMa5dfmqJruWiLwyP8Sz+0beJNrC0gedvVXcVDgTJOV+XUR3QPdJutNhq5L5dYd8A8i6R6+9SzEloLT/AORxF7TOvNWdNNdbxMxp1OB2c0BpZUgG0TuEQY6ELeYXsqahBEPInUceC4fC7TLGN3Akzpc2Mr0Hsh2pa0Qbg3mRpYSPP0WnFWsz9THy7Z6V7Y5bPFdnK5ADADlEXsY6rA2jsauA0kHu3A42uLb12uD27SfNxy5zporW0tqNDS2RmG6Z8lonj49bh4uPnciLRE1ebU8SRJJcC2ZsPfv8V0fZrtflcKVUyDp/88D/AErl9v40e1zRlz791tJ8RC04IM5WWBGUi0OA/KfIx9FmpacVvHo92/Ex8nH9Ufw9+p1A4AtMg3BVUrg/w97S+0Ao1HCTOW+/h1+nFd0vTpaLRuHyPJ49sGScdvZVKKFIXSgQIgQSiIgIiICIiAiIgIiICtV6ga0uOgBJ8FdWp7TVsuHdzt8fgomdQmsbnTyztLjjUqGTcnMfHQeUeS1OKgNknT1O4LL2lTkzqTb3ytVtA5oE+HReXM9rPfpj1ERDAquJHUR6+9YxbuO5ZOL7sX6+H2VgVz3tTFoVnsuX6+LAAibCPL6qxTqEAmQTqfAcViVnQY13fFXB+TW5nxVfSFlbLrqwJY0AEydPWff4qKzrEbw4/fkVgUnw9pI+ayq75j+70j6LqaaldS6Bija9gevJZuBxDgZBsSAPMaToVrjTJPd3m3yCp9ucoBPguuv2aa5Pu67Z23QHgOcWnQ5pI38NVm47bDzOWoBDT+okloMb9TeYXFNfOjdPr6R7lW6Qe9Jta/rKjy6+Tjm24bzaONNW9xaBuBdrM+SsCu8MIkS05xvkiJ+cLWtqw1wOYOtHCQd/qsoEAXIDpvza4ZgTC4s149RGoZeF2sadVtSn3YId0MyR0uD4BfQ2x8cK9BlUfqAnrvXzRm7sECzpm8xYRPCIXt34WYwuwuQmcvwJB+C0ca3s8T49gicUZIjzE6/SXaqoKFK2vlEoiICIiAiIgIiICIiAiKCgFc/2vf8A5Tf9R8h9VviVz/axuamP9XwXGT8MrMP44eavpxa5MH4SVpMY0BwLRYfFdXj6OQExNo+crnKjASZkaLzaxp9Dincbaau2SPveVYxmUXF4F/d8Vuv4cQSbBabFYcgku0PukRAXUyt67auqwuGYQNZV2gRlO6Apy97frMRuWThKU5riw4RvSZRNdNWyCTe+7yumYgtPPp0VLmkE8lkYdpc0HcLq0haJseP7aK24ibGQr9amS49P29ys06R1+5UxDRWfK8CJBix1A3CdBKPcNx6K82jDYO+PBHYbuz6LnTRFxjWlpIi0a6zoYjXf4I5pbZ29oI6GCCFayw030ItyVVKTxK4mq+lts+nJy02kOzQ6Bxy++F63+E5imY0Ob4H4LyrY9J5LSLXy+77leyfh9hcjRaLE+is48T2ed8Zyx/5+rtlKhStz5BKIiAiIgIiICIiAiIgKCpRBSVqdvU5YOvvH0W2Kw9oszMI8fJRMbh1WdS892uzumFztfDwQdwPrAXV7UZY/etly2IeM4ESB4QYK820al7/FndWLUZLj00iNy1uIws/m1nw3rYmrLjun5qt1NukC3qVy2R4aYbPbAsNNecq3g6Q70CCVsq7YJE2spo4e0gA36a8E9iY8eXN1cDBqSYvIneFe2cwBsH97kraY3DwC48OV5hYOHZcbr+StidwjSipQBcY0j6fFY7WwYgX+C2pZ3iRpp1ssMMGbX6LqHULLqRImLp7M5d1vPospxnyhVVaYyjdpZHe2HQwwJvos2lhGEkgbvuPBRSpieCzKDNw+/uE1t12mIbLYWHaHNEQvVuy1CATwbHmfovPuz9DM+Y0XqWxaOWn1PoLfNX4YeL8Ty7iIZ6lQpV7xkoiICIiAiIgIiICIiAiIgpKsvCvFUlqDh+0FLI4jcZXDV3jOS7peBxGq9P7ZYOaWcDSx+/vReVY8iTJi/p9wsGeNWe78OtFqopNAcT+n3dfRbBlEObnmTqPktczK1kCXfIz9Fm4dgGUNM2tedf2WeZejZYxlG05eHoFRhqwjI5o4jXcs+nhi4EOcZv8At6rHxlzEASD1ICbN78NdiXS0gEGTbwEn0VnD0CTYaXIVbpy7gSI5dfer2DIbEnUx5D781ZHos66hhklk77nyg+SxadGSTHBZWKZqNZm/TeqKVF4BMkLuJT1U16Qae7dWKzyQNbLMp4e/L7hXG4IkxxUxMImrGpAwJW0wmFMDUcVkYDADM3N3uXS66DB4BrnCB14bzCdtz4V3tFY8s/sxs4wLXn9l6HSp5WgDcIWn2HhQLxYadf2963YWykah81ycve4pRF2zCIiAiIgIiICIiAiIgIiiUBQoJUFyC1jcOKlNzD+oEeO5eK7aoFrnMcIc0kEdD9F7Y6ovPfxD2TJ/iaY5VI8g74eAVGenaN/Zu4OXpfU+7hsC6GwZiD6GQsmliQG5gNDHgbjpqta2re5vprwVYxIBEXHTkvPmHvxbbZ0cY6Sd3wVT2ZxIcZHSIWuOInKJA5xPmrrHECM0WHOd6iHcRHrCCMrQYsTr4hVMpNgm8ggjh4+YVNV4LW3nLz4c1m0aId6mxF+Ucl12dzOmLUw5NgLi3mQfJZOHwwDDmeOmunBRTcAYvxtB0kCFnYfB2a90Xm288JUzJaderWCiTZrZtZZtJge6TYCw8Bp1V2o6pGYS2JHKBuCyMO0SBEaE2+aRtEzPqjDYfv2A05711OyMDpvJWv2XgJIJmB9wuz2dhcozEX3cgtWHH7y8jncnX0wzcNSDWgDcr4VDVUtbxEooRBKlQgQSiIgIiICIiAihEBQSpVLggoc5WKlaFNZa7El25Ewu1cUFqsfiQ4EGCCII3EHcrdbMtbimOXKysPPO1Gy3UKheyTTOh1jkfnvWnoYgwR4hd9tCkSCCJB13hcbtHs+6ZpkjkqL4t+j08XK1GrMOlXk8DodyzRjQDFh7lpq2za4M5fJUPpVt7He9Uzhlrjl1+7dYasSS2ZELZ4PHBrSDE7o01kSeK5Kk57fzNfPQo3EvGodHQricUrp5VJ93ZYas0kXkHVbcYvMY3RbwXB4fHOB/K8+BWZhcfUF8h5Wj3qv5VtuozY7eZl19IZi0GbcLreYLClxGaNbCOGkcVx2AxmKfZjBmO+C6F3PZbYFdrva16hLvM/QcgtOPFPuz8rlViPEun2fs8NAJHQfErZtCt0wrrQtkRp4F7TadyrClQFKlWIiICkKFIQSiIgIiICIiAoUoghCFKILT2Kw+gCssqCEGsfgZVipswFbnKoyppO5c1X2IDuWHU7Og/pXYZUyqNOu8uIf2XB/SrDuyAP6V3+VRlTR8yXn/AP0VP6Qqm9hRwaF32VMqaT8yXEU+wdPefRZuH7FYZurcy6rKkJ1g+bb7tXhNlUqf5GBvgs1rVeLVGRNOe0z6qWhXWhQGqsKUTIiIiBERAUhQpCCUREBERAREQEREBERAREQRCQpRBEKIVSIIhIUogiEhSiCISFKIIhIUogiEhSiCISFKIIhIUogiEClEBERAREQf/9k=" alt="" width ="100" height="100" />
+      </div>
+   
+      <div class="description">
+        <span>Apple</span>
+        <span> 1 KG</span>
+        <span></span>
+      </div>
+   
+       <div class="quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="plus.svg" alt="" >
+        </button>
+        <input type="text" name="name" value="1">
+        <button class="minus-btn" type="button" name="button">
+          <img src="minus.svg" alt="" >
+        </button>
+      </div>
+   
+      
+   
+      <div class="total-price">Rs.150</div>
+    </div>
+    <div class ="container">
+      <a href="#" data-name="Apple" data-price="150" class="add-to-cart btn btn-primary" style="background-color: white; border-color: white;">
+
+ 
+        <img src="https://icons.veryicon.com/png/o/miscellaneous/small-icons-1/ic-add-to-cart.png" alt="" width="50" height="50">
+      </a>
+    </div>  
+   
+    <!-- Product #2 -->
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+   
+      <div class="image">
+        <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51ebZJ+DR4L._SX679_.jpg" alt="" width ="100" height="90" />
+      </div>
+   
+      <div class="description">
+        <span>Banana</span>
+        <span>1 dozen </span>
+        <span></span>
+      </div>
+   
+      <div class="quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="plus.svg" alt="" />
+        </button>
+        <input type="text" name="name" value="1">
+        <button class="minus-btn" type="button" name="button">
+          <img src="minus.svg" alt="" />
+        </button>
+      </div>
+   
+      <div class="total-price">Rs.100</div>
+    </div>
+    <div class ="container">
+      <a href="#" data-name="Banana" data-price="100" class="add-to-cart btn btn-primary" style="background-color: white; border-color: white;">
+
+ 
+        <img src="https://icons.veryicon.com/png/o/miscellaneous/small-icons-1/ic-add-to-cart.png" alt="" width="50" height="50">
+      </a>
+    </div>  
+   
+   
+    <!-- Product #3 -->
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+   
+      <div class="image">
+        <img src="data:image/jpeg;base64,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" alt="" width ="80" height="80"/></div>
+   
+      <div class="description">
+        <span>Orange</span>
+        <span>1 Kg</span>
+        <span></span>
+      </div>
+   
+      <div class="quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="plus.svg" alt="" />
+        </button>
+        <input type="text" name="name" value="1">
+        <button class="minus-btn" type="button" name="button">
+          <img src="minus.svg" alt="" />
+        </button>
+      </div>
+  
+      <div class="total-price">Rs.90</div>
+    </div> 
+    <div class ="container">
+      <a href="#" data-name="Orange" data-price="90" class="add-to-cart btn btn-primary" style="background-color: white; border-color: white;">
+
+ 
+        <img src="https://icons.veryicon.com/png/o/miscellaneous/small-icons-1/ic-add-to-cart.png" alt="" width="50" height="50">
+      </a>
+    </div>  
+
+    
+  <div class="item">
+        <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+     
+        <div class="image">
+          <img src="https://media.istockphoto.com/id/1258142863/photo/tomatoes-isolate-on-white-background-tomato-half-isolated-tomatoes-side-view-whole-cut-slice.jpg?b=1&s=170667a&w=0&k=20&c=hFvgq7wOVkoxHR7O2KE3DDbO127FJT4Ub_NZJ6FQCTQ=" alt="" width ="100" height="90"/>
+        </div>
+     
+        <div class="description">
+          <span>Tomatoes</span>
+          <span>1 Kg</span>
+          <span></span>
+        </div>
+     
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="minus.svg" alt="" />
+          </button>
+        </div>
+     
+        <div class="total-price">Rs.40</div>
+      </div> 
+      <div class ="container">
+      <a href="#" data-name="Tomatoes" data-price="40" class="add-to-cart btn btn-primary" style="background-color: white; border-color: white;">
+
+ 
+        <img src="https://icons.veryicon.com/png/o/miscellaneous/small-icons-1/ic-add-to-cart.png" alt="" width="50" height="50">
+      </a>
+    </div>  
+    <div class="item"> 
+     <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+     
+        <div class="image">
+          <img src="https://media.istockphoto.com/id/175448479/photo/red-onion-slice.jpg?s=612x612&w=0&k=20&c=LN1FqmYnwbHkhgBxV9FQ9zFm52iJKo1gO1EwNjbKuAw=" alt="" width ="120" height="90"/></div>
+     
+        <div class="description">
+          <span>Onions</span>
+          <span>1 Kg</span>
+          <span></span>
+        </div>
+     
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="minus.svg" alt="" />
+          </button>
+        </div>
+     
+        <div class="total-price">Rs.40</div>
+      </div>
+      <div class ="container">
+      <a href="#" data-name="Onions" data-price="40" class="add-to-cart btn btn-primary" style="background-color: white; border-color: white;">
+
+ 
+        <img src="https://icons.veryicon.com/png/o/miscellaneous/small-icons-1/ic-add-to-cart.png" alt="" width="50" height="50">
+      </a>
+    </div>  
+      <div class="item">
+        <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+     
+        <div class="image">
+          <img src="https://thumbs.dreamstime.com/b/cucumber-white-8624699.jpg" alt="" width ="120" height="90"/></div>
+        <div class="description">
+          <span>Cucumber</span>
+          <span>1 Kg</span>
+          <span></span>
+        </div>
+     
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="minus.svg" alt="" />
+          </button>
+        </div>
+     
+        <div class="total-price">Rs.40</div>
+      </div> 
+      <div class ="container">
+        <a href="#" data-name="Cucumber" data-price="40" class="add-to-cart btn btn-primary" style="background-color: white; border-color: white;">
+  
+   
+          <img src="https://icons.veryicon.com/png/o/miscellaneous/small-icons-1/ic-add-to-cart.png" alt="" width="50" height="50">
+        </a>
+      </div> 
+  </div>
+  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart table">
+            
+          </table>
+          <div>Total price: Rs.<span class="total-cart"></span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary"><a href="thankyou.html">Order now </a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="demo.js"></script>
+</body>
+
+</html>
+ 
