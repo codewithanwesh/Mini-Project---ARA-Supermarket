@@ -35,5 +35,5 @@ This project is a responsive e-commerce website that includes features like prod
 
 
 ## Contact
-For any inquiries, please contact [risha.rout1607@gmail.com](mailto:risha.rout1607@gmail.com).
+For any inquiries, please contact [contactanweshbharadwaj@gmail.com](mailto:anwesh.b@somaiya.edu).
 
